@@ -1,102 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Registration Form</title>
-</head>
 <body>
 
-	<h1>Registration Form</h1>
+<h1>Registration form</h1>
 
-	<form action="Registration form Action.php" method="POST">
-		
-		<!-- Input Text Field -->
-		<label for="name">Name:</label>
-		<input type="text" name="name" id="name">
-
-		<br>
-
-		<label for="gender">Gender:</label>
-		<input type="radio" name="gender" id="male" value="male">
-		<label for="male">Male</label>
-
-		<input type="radio" name="gender" id="female" value="female">
-
-		<label for="female">Female</label>
-		
-		<br>
-		 
-		 <label for="dob">DoB:</label>
-		 <input type="date" id="dob" name="dob">
-		 
-		 <br>
-
-		 <label for="religion">Religion:</label>
-		<select id="religion" name="religion">
-			<option value="Muslim">Muslim</option>
-			<option value="Hindu">Hindu</option>
-			<option value="Christian">Christian</option>
-			<option value="Hindu">Hindu</option>
-		</select>
-
-		<br>
-
-		 <label for="fname">Father's Name:</label>
-		<input type="text" name="fname" id="fname">
-		 
-		 <br>
-
-		 <label for="mname">Mother's Name:</label>
-		 <input type="text" name="mname" id="mname">
-		 
-		 
-
-		<br>
-
-		<label for="presentadd">Present Address:</label>
-		 <input type="text" name="presentadd" id="presentadd">
-			
-		<br>
-
-		<label for="parmadd">Present Address:</label>
-		<input type="text" name="parmadd" id="parmadd">
-
-		 <br>
-
-		  <label for="phone"> Phone :</label>
-		<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}">
-		
-		<br>
-		
-		 <label for="email"> Email:</label>
-		<input type="email" id="email" name="email"> 
-		<br>
-		
-		<a href="https://saimazeba08@gmail.com/">Visit saimazeba08@gmail.com!</a>
-		
-		<br>
-		
-		<label for="SSC">SSC Year:</label>
-		<input type="number" id="SSCYear" name="SSCYear" value="SSCYear">
-		<br>
-
-		<label for="SSCInstitution">SSC Institution:</label>
-		<input type="text" id="SSCInstitution" name="SSCInstitution" value="SSCInstitution">
-		
-		<br>
-
-		<label for="HSC">HSC Year</label>
-		<input type="number" id="HSCYear" name="HSCYear" value="HSCYear">
-		
-
-		<br>
-		
-		<label for="HSCInstitution">HSC Institution:</label>
-		<input type="text" id="HSCInstitution" name="HSCInstitution" value="HSCInstitution">	 
-
-		<!-- Input submit -->
-		<input type="submit" value="Submit">
-
-	</form>
+<form action="Registration form Action.php" method="POST">
+ <fieldset>
+  <legend>Basic Information:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="female">Female</label><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+ </fieldset>
+ <fieldset>
+  <legend>User Account Information:</legend>
+  <label for="fname"> User Name</label>
+  <input type="text" name="Username" id="Username"><br><br>
+  <label for="pass">Password</label>
+  <input type="password" name="passw" id="pass"><br><br>
+  <label for="email">Recovery Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+ </fieldset>
+<input type="submit" value="Submit">
+</form>
 
 </body>
 </html>
+
+
