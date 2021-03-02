@@ -7,25 +7,52 @@
 <form action="Registration form Action.php" method="POST">
  <fieldset>
   <legend>Basic Information:</legend>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
   <input type="radio" name="gender" id="male" value="male">
   <label for="male">Male</label>
   <input type="radio" name="gender" id="female" value="female">
   <label for="female">Female</label><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
+  <label for="dob">DoB:</label>
+  <input type="date" id="dob" name="dob">
+  <label for="religion">Religion:</label>
+  <select id="religion" name="religion">
+  <option value="muslim">Muslim</option>
+  <option value="hindu">Hindu</option>
+  <option value="christian">Christian</option>
+  <option value="buddhasiam">Buddhasiam</option>
+  </select><br><br>
+  <label for="fname">Father's Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="mname">Mother's Name:</label>
+  <input type="text" id="mname" name="mname"><br><br>
+  
+  
  </fieldset>
  <fieldset>
-  <legend>User Account Information:</legend>
-  <label for="fname"> User Name</label>
-  <input type="text" name="Username" id="Username"><br><br>
-  <label for="pass">Password</label>
-  <input type="password" name="passw" id="pass"><br><br>
-  <label for="email">Recovery Email:</label>
+  <legend>Contact Information:</legend>
+  <label for="presentadd">Present Address:</label>
+  <input type="text" id="presentadd" name="presentadd"><br><br>
+  <label for="permadd">Permanent Address:</label>
+  <input type="text" id="permadd" name="permadd"><br><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{6}"><br><br>
+  <label for="email">Email:</label>
   <input type="email" id="email" name="email"><br><br>
+  <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">For more input type click me</a>
+ </fieldset>
+
+ </fieldset>
+ <fieldset>
+  <legend>Academic Information:</legend>
+  <label for="SSCYear">SSC Year:</label>
+  <input type="number" id="SSCYear" name="SSCYear" ><br><br>
+  <label for="SSCInstitution">SSC Institution:</label>
+  <input type="text" id="SSCInstitution" name="SSCInstitution" ><br><br>
+  <label for="HSCYear">HSC Year:</label>
+  <input type="number" id="HSCYear" name="HSCYear" "><br><br>
+  <label for="HSCInstitution">HSC Institution:</label>
+  <input type="text" id="HSCInstitution" name="HSCInstitution" ><br><br>
  </fieldset>
 <input type="submit" value="Submit">
 </form>
